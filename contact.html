@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Michelle Yoder Photography</title>
+		<link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' href='css/style.css'>
+		<link rel='stylesheet' href='css/form.css'>
+	</head>
+
+	<body>
+		<div class='container'>
+			<div class='header'>
+				<div class='logo'><img src='images/name_heart.svg'></div>
+				<div class='menu'><img src='images/menu.png' width='30px'></div>
+				<div class='nav top'>
+					<ul>
+						<li><a href='index.html'>home</a></li>
+						<li class='line'>|</li>
+						<li><a href='galleries.html'>galleries</a></li>
+						<li class='line'>|</li>
+						<li><a href='http://www.michelleyoder.com/events/page.php'>events</a></li>
+						<li class='line'>|</li>
+						<li><a href='http://chelleyphoto.tumblr.com/'>blog</a></li>
+						<li class='line'>|</li>
+						<li><a href='aboutme.html'>about me</a></li>
+						<li class='line'>|</li>
+						<li><a href='contact.html'>contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='content'>
+				<div class='main'>
+
+					<div id='form-messages'></div>
+
+					<form id='ajax-contact' method='post' action='scripts/mailer.php'>
+						<div class='field'>
+							<label for='name'>name:</label>
+							<input type='text' id='name' name='name' required>
+						</div>
+
+						<div class='field'>
+							<label for='email'>email:</label>
+							<input type='email' id='email' name='email' required>
+						</div>
+
+						<div class='field'>
+							<label for='message'>message:</label>
+							<textarea id='message' name='message' required></textarea>
+						</div>
+						<div class='field'>
+							<button type='submit'>send</button>
+						</div>
+					</form>
+
+					<div class='info'>
+						<ul>
+							<li><a href='tel:415-713-4301'>415-713-4301</a></li>
+							<li>|</li>
+							<li><a href='mailto:yoder.michelle@gmail.com'>yoder.michelle at gmail.com</a></li>
+					</div>
+				</div>
+			</div>
+			<div class='footer'>
+				<div class="social">
+					<ul>
+						<li><a href='http://facebook.com/michelleyoderphotography'><img src='images/social_media/facebook.png' alt='facebook' /></a></li>
+						<li><a href='http://chelleyphoto.tumblr.com/'><img src='images/social_media/tumblr.png' alt='tumblr' /></a></li>
+						<li><a href='https://twitter.com/michelle_yoder'><img src='images/social_media/twitter.png' alt='twitter' /></a></li>
+						<li><a href='http://www.yelp.com/biz/michelle-yoder-photography-san-francisco#query:michelle%20yoder%20photography'><img src='images/social_media/yelp.png' alt='yelp' /></a></li>
+						<li><a href='http://instagram.com/michelleyoder'><img src='images/social_media/instagram.png' alt='instagram' /></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+			   	   <p>&copy; Michelle Yoder 2010 - 
+			   	   	<script>document.write(new Date().getFullYear())</script>
+			  	   </p>
+			   </div>     
+			</div>
+		</div>
+
+
+		<script src='scripts/jquery-1.11.1.js'></script>
+		<script src='scripts/main.js'></script>
+		<script src='scripts/app.js'></script>
+	</body>
+</html>

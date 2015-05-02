@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Michelle Yoder Photography</title>
+		<link href='http://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'>
+		<link rel='icon' href='../images/favicon.ico'>
+		<link rel='stylesheet' href='../css/style.css'>
+	</head>
+
+	<body>
+		<div class='container'>
+			<div class='header'>
+				<div class='logo'><img src='../images/name_heart.svg'></div>
+				<div class='menu'><img src='../images/menu.png' width='30px'></div>
+				<div class='nav top'>
+					<ul>
+						<li><a href='../index.html'>home</a></li>
+						<li class='line'>|</li>
+						<li><a href='../galleries.html'>galleries</a></li>
+						<li class='line'>|</li>
+						<li><a href='../events/page.php'>events</a></li>
+						<li class='line'>|</li>
+						<li><a href='http://chelleyphoto.tumblr.com/'>blog</a></li>
+						<li class='line'>|</li>
+						<li><a href='../aboutme.html'>about me</a></li>
+						<li class='line'>|</li>
+						<li><a href='../contact.html'>contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='content'>
+				<div class='gallery'>
+					<?php
+			      	@include("gallery.php");
+			      	?> 
+				</div>
+				<div class='nav gallery-menu'>
+					<ul>
+						<li><a href='../boudoir/page.php'>boudoir</a></li>
+						<li class='line'>|</li>
+						<li class='fancy'>X</li>
+						<li><a href='../burlesque/page.php'>burlesque</a></li>
+						<li class='line'>|</li>
+						<li class='fancy'>X</li>
+						<li><a href='../creative/page.php'>creative</a></li>
+						<li class='line'>|</li>
+						<li class='fancy'>X</li>
+						<li><a href='../fashion/page.php'>fashion</a></li>
+						<li class='line'>|</li>
+						<li class='fancy'>X</li>
+						<li><a href='../pinup/page.php'>pinup</a></li>
+						<li class='line'>|</li>
+						<li class='fancy'>X</li>
+						<li><a href='../shows/page.php'>shows</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='footer'>
+				<div class="social">
+					<ul>
+						<li><a href='http://facebook.com/michelleyoderphotography'><img src='../images/social_media/facebook.png' alt='facebook' /></a></li>
+						<li><a href='http://chelleyphoto.tumblr.com/'><img src='../images/social_media/tumblr.png' alt='tumblr' /></a></li>
+						<li><a href='https://twitter.com/michelle_yoder'><img src='../images/social_media/twitter.png' alt='twitter' /></a></li>
+						<li><a href='http://www.yelp.com/biz/michelle-yoder-photography-san-francisco#query:michelle%20yoder%20photography'><img src='../images/social_media/yelp.png' alt='yelp' /></a></li>
+						<li><a href='http://instagram.com/michelleyoder'><img src='../images/social_media/instagram.png' alt='instagram' /></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+			   	   <p>&copy; Michelle Yoder 2010 - 
+			   	   	<script>document.write(new Date().getFullYear())</script>
+			  	   </p>
+			   </div>     
+			</div>
+		</div>
+
+		<script src='../scripts/jquery-1.11.1.js'></script>
+		<script src='../scripts/main.js'></script>
+	</body>
+</html>
